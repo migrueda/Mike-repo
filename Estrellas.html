@@ -1,0 +1,37 @@
+<meta charset="utf-8">
+
+<h3>Juego Adivinación.</h3>
+<br>
+<br>
+<br>
+
+<script>
+	
+	function saltarlinea()	{
+
+		document.write("<br>");
+		
+	}
+
+	//crear funcion imprimir que reemplaza document.write
+	function imprimir(frase){
+		
+		document.write(frase)
+		saltarlinea();
+
+	}
+	
+	for (var lineas = 1; lineas <= 3; lineas++) {
+		for(var columnas = 1; columnas <=10; columnas++){
+
+			document.write("*");
+
+
+		}
+		saltarlinea();
+		
+	}
+
+	imprimir("Fin.")
+
+</script>

@@ -1,0 +1,43 @@
+<meta charset="utf-8">
+
+<h3>MEDIA EDADES.</h3>
+<br>
+<br>
+
+
+<script>
+	//var  victoria = parseInt (prompt ("Informe la cantidad de victorias:"));
+
+
+	function saltarlinea()	{
+
+		document.write("<br>");
+		document.write("<br>");
+		document.write("<br>");
+	}
+
+	//crear funcion imprimir que reemplaza document.write
+	function imprimir(frase){
+		
+		document.write(frase)
+		saltarlinea();
+
+	}
+
+	var  miembros = parseInt (prompt ("Número de miembros: "));
+	var contador = 1; //inicializador
+	var totaledades = 0;
+
+	 while(contador <= miembros){
+
+	 	
+	 	edad = parseInt(prompt("Ingrese la edad del familiar:"));
+	 	totaledades = totaledades + edad;
+	 	contador++; //incremento
+
+
+	 }
+	 imprimir("La media de las edades de la familia es: " + totaledades / miembros);
+	 imprimir("fin");
+	</script>
+

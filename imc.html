@@ -1,0 +1,61 @@
+<meta charset="utf-8">
+
+<h3>INDICE DE MASA CORPORAL</h3>
+<br>
+<br>
+<br>
+
+<script>
+	
+	function saltarlinea()	{
+
+		document.write("<br>");
+		document.write("<br>");
+		document.write("<br>");
+	}
+
+	//crear funcion imprimir que reemplaza document.write
+	function imprimir(frase){
+		
+		document.write(frase)
+		saltarlinea();
+
+	}
+
+	function calcularimc(peso, altura){
+
+		
+		return (peso / (altura*altura));
+
+		
+	}
+	nombre = prompt ("Informe su nombre")
+	pesoInformado = prompt (nombre + " Informe su peso: ")
+	alturaInformado = prompt (nombre + " Informe su altura:")
+
+	//promt es para ingresar datos
+
+	imcCalculado = calcularimc (pesoInformado, alturaInformado)
+
+	imprimir (nombre + " El imc calculado es: " + imcCalculado)
+
+	//imprimir("El promedio del imc calculado de Miguel y Felipe es: " + (calcularimc(80,1.77) + calcularimc(75,1.85))/2);
+	
+	//imprimir("El promedio del imc calculado de Pedro y Juan es: " + (calcularimc(80,1.77) + calcularimc(75,1.85))/2);
+
+	if (imcCalculado<=18.5) {
+
+		imprimir("Estas flaco.")
+	}
+	if (imcCalculado>=25 && imcCalculado <= 29.9) {
+		imprimir("Estas gordo")
+	}
+	if (imcCalculado>=18.5 && imcCalculado <= 24.9) {
+
+		imprimir("Estas normal")
+	}
+	if (imcCalculado>= 30) {
+		imprimir("Estas obeso")
+	}
+
+</script>

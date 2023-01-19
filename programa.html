@@ -1,0 +1,38 @@
+<meta charset="utf-8">
+
+<h3>¿Alcohol o gasolina?</h3>
+
+<br>
+<br>
+
+<script>
+
+	function saltarlinea()	{
+
+		document.write("<br>");
+		document.write("<br>");
+		document.write("<br>");
+	}
+
+	//crear funcion imprimir que reemplaza document.write
+	function imprimir(frase){
+		
+		document.write(frase)
+		saltarlinea();
+
+	}
+
+	var tanque = 40
+	var gas = 480
+	var kmxlt = gas/tanque
+
+		imprimir("Hola mundo.");
+
+		imprimir("El carro recorre " + kmxlt + " km/lt de gasolina.");
+
+	var alcohol = 300
+	kmxlt = alcohol/tanque
+
+		imprimir("El carro recorre " + kmxlt + " km/lt de alcohol.");
+
+</script>

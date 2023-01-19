@@ -1,0 +1,45 @@
+<meta charset="utf-8">
+
+<h3>TABLA DE MUNTIPLICAR.</h3>
+<br>
+<br>
+<br>
+
+<script>
+	
+	function saltarlinea()	{
+
+		document.write("<br>");
+		document.write("<br>");
+		document.write("<br>");
+	}
+
+	//crear funcion imprimir que reemplaza document.write
+	function imprimir(frase){
+		
+		document.write(frase)
+		saltarlinea();
+
+	}
+
+
+	imprimir("while");
+	var multiplicador = 1;
+	var  numero = parseInt (prompt ("Ingrese número a multiplicar:"));
+
+	while(multiplicador <=10){
+		
+		imprimir(numero*multiplicador);
+		
+		multiplicador = multiplicador + 1;
+	}
+
+	imprimir("for");
+	 for (var multiplicador = 1; multiplicador <= 10; multiplicador + 1) {
+	 	imprimir(numero*multiplicador);
+		
+		multiplicador = multiplicador + 1;
+	}
+
+	</script>
+

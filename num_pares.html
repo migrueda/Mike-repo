@@ -1,0 +1,42 @@
+<meta charset="utf-8">
+
+<h3>Numeros pares.</h3>
+<br>
+<br>
+
+
+<script>
+	//var  victoria = parseInt (prompt ("Informe la cantidad de victorias:"));
+
+
+	function saltarlinea()	{
+
+		document.write("<br>");
+		document.write("<br>");
+		document.write("<br>");
+	}
+
+	//crear funcion imprimir que reemplaza document.write
+	function imprimir(frase){
+		
+		document.write(frase)
+		saltarlinea();
+
+	}
+
+	
+	var contador = 2; //inicializador
+	
+
+	 while(contador <= 100){//condición
+
+	 	imprimir(contador);
+	 	contador = contador+2; //incremento
+		
+	
+	 }
+
+	 imprimir("fin");
+
+	</script>
+
